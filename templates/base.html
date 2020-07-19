@@ -13,15 +13,9 @@
 
     <!-- Main css -->
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
     <style>
-        @font-face {
-            font-family: 'Cairo';
-            font-style: normal;
-            font-weight: 300;
-            src: url("{{url_for('static', filename='fonts/Cairo/Cairo.ttf')}}");
-            /* Legacy iOS */
-        }
+       
 
         *,
         h1,
@@ -31,7 +25,7 @@
         h5,
         h6,
         input {
-            font-family: 'Cairo';
+            font-family: 'Cairo', sans-serif;
         }
 
         .list-selection-buttons {
