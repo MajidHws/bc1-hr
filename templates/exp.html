@@ -4,8 +4,8 @@
 {% endblock %}
 {% block body %}
 
-        <!-- Sign up form -->
-        <!-- <section class="signup">
+<!-- Sign up form -->
+<!-- <section class="signup">
             <div class="container">
                 <div class="signup-content">
                     <div class="signup-form">
@@ -44,43 +44,45 @@
             </div>
         </section> -->
 
-        <!-- Sing in  Form -->
-        <section class="sign-in">
-            <div class="container">
-                <div class="signin-content">
-                    <div class="signin-image">
-                        <figure><img src="{{url_for('static', filename='images/signin-image.jpg')}}"
-                                alt="sing up image"></figure>
-                        <!-- <a href="#" class="signup-image-link">Create an account</a> -->
-                    </div>
+<!-- Sing in  Form -->
+<section class="sign-in">
+    <div class="container">
+        <div class="signin-content">
+            <div class="signin-image">
+                <figure><img src="{{url_for('static', filename='images/signin-image.jpg')}}" alt="sing up image">
+                </figure>
+                <!-- <a href="#" class="signup-image-link">Create an account</a> -->
+            </div>
 
-                    <div class="signin-form" dir="rtl">
-                        <h2 class="form-title">تحليل الخبرة</h2>
-                        <div class="">
+            <div class="signin-form" dir="rtl">
+                <h2 class="form-title">تحليل الخبرة</h2>
+                <div class="">
 
-                            <form action="/result" method="POST">
-                                <div class="form-group">
-                                    <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                    <input type="text" name="name" id="name" placeholder="الاسم الكامل"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email"><i class="zmdi zmdi-email"></i></label>
-                                    <input type="email" name="email" id="email" placeholder="البريد الالكتروني"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="pass"></label>
-                                    <textarea row="12" name="content" id="pass"
-                                        placeholder="تحدث عن خبراتك"></textarea>
-                                </div>
+                    <form action="/result" method="POST">
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="name" id="name" placeholder="الاسم الكامل" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="البريد الالكتروني" />
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"></label>
+                            <textarea row="12" name="content" id="pass" placeholder="تحدث عن خبراتك"></textarea>
+                        </div>
 
-                                <div class="form-group">
-                                    <input type="submit" class="sub-btn" value="حلل">
-                                    
-                                </div>
-                            </form>
+                        <div class="form-group">
+                            <input type="submit" class="sub-btn" value="حلل">
 
                         </div>
+                    </form>
+                    <hr>
+                    <div class="form-group">
+                        <a href="/" class="goHome">العودة للرئيسية</a>
                     </div>
                 </div>
-        </section>
+            </div>
+        </div>
+</section>
 {% endblock %}
